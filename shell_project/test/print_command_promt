@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ *main - prints $, waits for a command then prints $ again on next line
+

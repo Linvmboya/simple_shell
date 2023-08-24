@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ *main - prints all the arguments without using ac
+ *@av: Is a NULL terminated array of strings
+ *@ac: Is the number of items in av
+ *
+ *Return: 0 Always
+ */
+int main(int ac __attribute__((unused)), char **av)
+{
+   printf("%s\n", **av)
+}  
