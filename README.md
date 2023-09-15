@@ -1,2 +1,2 @@
-This project aims at creating a simple shell. The shell project allows us to be able to test the knowledge we have acquired and make a shell capable of handling various shell commands.
-my shell project
+0x16. C - Simple Shell
+A project where we basically create a simple shell on our own and ensure that it is working
