@@ -8,8 +8,12 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-void func_print(const char *string);
-void display_prompt(void);
+int _printchar(char c);
+int _printstring(char *str);
+int main(int ac __attribute__((unused)), char **av);
+int display_prompt(void);
+int pid_max(void);
+int exec_command(void);
 void read_command(char *command, size_t size);
 void execute_command(const char *command);
 

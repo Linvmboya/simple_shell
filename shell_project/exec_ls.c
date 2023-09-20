@@ -2,11 +2,11 @@
 #include <sys/wait.h>
 
 /**
- * main - executes the command ls -l /tmp in a child process
+ * exec_command - executes the command ls -l /tmp in a child process
  *
- * Return: 0
+ *Return: 0
  */
-int main(void)
+int exec_command(void)
 {
 	pid_t child_pid;
 	char *argv[] = {"/bin/ls", "-l", NULL};
@@ -24,6 +24,6 @@ int main(void)
 	else
 	{
 		wait(NULL);
-		func_print("Parent process");
 	}
+	return (0);
 }

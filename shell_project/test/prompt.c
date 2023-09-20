@@ -5,8 +5,9 @@
 /**
  * display_prompt - function that displays the prompt
  *
+ *Return: 0
  */
-void display_prompt(void)
+int display_prompt(void)
 {
 	printf("$");
 }
