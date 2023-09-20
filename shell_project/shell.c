@@ -27,11 +27,11 @@ int _printstring(char *str)
 }
 
 /**
- * display_prompt - function that prints the prompt
+ * main - function that prints the prompt
  *
  *Return: 0 Always
  */
-int display_prompt(void)
+int main(void)
 {
 	char *prompt = "Prompt$";
 	char *buffer = NULL;
@@ -45,10 +45,11 @@ int display_prompt(void)
 		if (n_chars == -1)
 		{
 			_printstring("Exiting the shell....");
-			return (-1);
+			exit(0);
 		}
 		_printstring(buffer);
+
 	}
 	free(buffer);
-	return (0);
+	return (0)
 }

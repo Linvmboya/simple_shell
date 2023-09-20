@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * pid_max - PID
+ * main - PID
  *
  * Return: Always 0.
  */
-int pid_max(void)
+int main(void)
 {
 	pid_t my_pid;
 	int num = 20;
