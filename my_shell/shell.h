@@ -22,7 +22,7 @@ int display_prompt(void);
 int _printf(const char *format, ...);
 void _putc(char *str);
 int _puts(char *c);
-void _realloc(void *ptr, size_t old_size, size_t new_size);
+void *_realloc(void *ptr, size_t old_size, size_t new_size);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 char *_strcpy(char *dest, char *src, size_t n);
 int _strlen(char *s);
@@ -30,6 +30,9 @@ char *string_concat(int n, char *s1, char *s2, ...);
 char **split_string(char *str);
 int count_word(char *s);
 int _strncmp(char *s1, char *s2);
+int _atoi(char *s);
+int _delim(char c, char *delim);
+int _isalpha(char c);
 
 
 #endif
